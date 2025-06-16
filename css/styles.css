@@ -1,5 +1,12 @@
 h1{
-    font-size: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #176078;
+    font-family: 'Roboto';
+}
+
+h2{
+    font-size: 1.5rem;
     font-weight: 700;
     color: #176078;
     font-family: 'Roboto';
@@ -8,4 +15,23 @@ h1{
 section{
     padding-left: 2%;
     padding-right: 2%;
+    font-family: 'Roboto';
+}
+
+div{
+    font-family: 'Roboto';
+    font-size: 1rem;
+}
+
+header{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    background-color: #abd5d57f;
+}
+
+footer{
+    font-family: 'Roboto';
+    color: rgb(90, 90, 90);
+    font-size: 1rem;
+    background-color: #abd5d57f;
 }
