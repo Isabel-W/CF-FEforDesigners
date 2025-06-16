@@ -18,6 +18,10 @@ section{
     font-family: 'Roboto';
 }
 
+body{
+    background-color: #F9FAFF;
+}
+
 div{
     font-family: 'Roboto';
     font-size: 1rem;
