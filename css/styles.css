@@ -53,19 +53,19 @@ body{
     line-height: 1.5;
     font-size: 16px;
     font-weight: 300;
-
+    align-content: center;
 }
 
 header{
     font-size: 1.25em;
     background-color: var(--accent);
-    
+    padding: 1.5em;    
 }
 
 footer{
     color: var(--text);
     background-color: var(--accent);
-    padding-left: 1.5em;
+    padding: 1.5em;
 }
 
 img {
