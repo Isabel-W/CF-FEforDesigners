@@ -23,6 +23,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color: var(--background);
     font-family: Helvetica, Verdana, sans-serif;
@@ -50,15 +54,15 @@ h3 {
   font-weight: 400;
 }
 
-main{
-    padding: 1.5em;
-    margin: 8px auto;
-}
-
 header{
     font-size: 1.25em;
     background-color: var(--accent);
     padding: 1.5em;
+}
+
+main{
+    padding: 1.5em;
+    margin: 8px auto;
 }
 
 footer{
