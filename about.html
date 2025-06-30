@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>About Me</title>
     <link rel="icon" type="image/svg" href="assets/logos/logo_Isabel.svg">
@@ -12,55 +13,58 @@
 
 <body>
     <header>
-        <nav>
-            <ul style="list-style-type:none;">
+        <div class="container">
+            <ul class="navigation" style="list-style-type:none;">
                 <li><a href="index.html">
                         <div>
-                            <img src="assets/logos/logo_Isabel.svg" alt="Home Isabel" height="40">
+                            <img src="assets/logos/logo_Isabel.svg" alt="Home Logo Isabel" height="40">
                         </div>
                     </a></li>
                 <li> <a href="about.html"> About </a> </li>
                 <li> <a href="projects.html"> Projects </a> </li>
                 <li> <a href="contact.html"> Contact </a> </li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <main style="align-items: center;">
-        <div>
-            <h1>Get to know me</h1>
-            <p>
-                <!-- <img src="./assets/img/" alt="Isabel"
+        <div id="hero">
+            <div class="container">
+                <h1>Get to know me</h1>
+                <p>
+                    <!-- <img src="./assets/img/" alt="Isabel"
                     style="width:200px; border-radius: 50%; float: right;"> -->
-                <picture>
-                    <source srcset="assets/img/OwnImage_Placeholder.png" media="(max-width:767px)"
-                        style="width:25%; border-radius: 50%; float: right;">
-                    <img src="assets/img/large_OwnImage_Placeholder.png" alt="Isabel"
-                        style="width:25%; border-radius: 50%; float: right;">
-                </picture>
-            <p>
-                Hello, I'm Isabel! <br>
-                As a UI/UX Designer with a solid foundation in Computer Science, I am fueled by curiosity and passioned
-                for exploration, always eager to embrace new opportunities to learn and grow. <br>
-                Whether embarking on a bike tour, hiking through nature's beauty, or savoring the flavors of new
-                cuisines, I relish the opportunity to explore both familiar and faraway places. You'll often find me
-                baking delightful treats during the cozy winter months, all with a coffee in hand and a curious spirit
-                ready for the next adventure.
+                    <picture>
+                        <source srcset="assets/img/OwnImage_Placeholder.png" media="(max-width:767px)"
+                            style="width:25%; border-radius: 50%; float: right;">
+                        <img src="assets/img/large_OwnImage_Placeholder.png" alt="Isabel"
+                            style="width:25%; border-radius: 50%; float: right;">
+                    </picture>
+                <p>
+                    Hello, I'm Isabel! <br>
+                    As a UI/UX Designer with a solid foundation in Computer Science, I am fueled by curiosity and
+                    passioned
+                    for exploration, always eager to embrace new opportunities to learn and grow. <br>
+                    Whether embarking on a bike tour, hiking through nature's beauty, or savoring the flavors of new
+                    cuisines, I relish the opportunity to explore both familiar and faraway places. You'll often find me
+                    baking delightful treats during the cozy winter months, all with a coffee in hand and a curious
+                    spirit
+                    ready for the next adventure.
 
-            </p>
-            <h2>For all the details</h2>
-            <p>
-                Want to know more? Just have a look at my CV to discover how I got here.
-            </p>
-            <p>
-                <a href="assets/files/cv-Isabel.pdf" target="_blank">Look at my CV</a>
-            </p>
+                </p>
+                <h2>For all the details</h2>
+                <p>
+                    Want to know more? Just have a look at my CV to discover how I got here.
+                </p>
+                <p>
+                    <a href="assets/files/cv-Isabel.pdf" target="_blank">Look at my CV</a>
+                </p>
+            </div>
         </div>
     </main>
 
     <footer>
-
-        <div>
+        <div class="container">
             <!--Social Media Layout and Placeholders-->
             <a href="https://www.linkedin.com/in/isabel-wanderwitz-43a491357" target="_blank">
                 <img src="assets/logos/linkedin.svg" alt="Icon linkedIn" style="width: 24px;">

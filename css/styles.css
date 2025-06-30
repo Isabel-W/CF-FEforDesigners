@@ -71,8 +71,6 @@ footer{
     padding: 1.5em;
 }
 
-ul{}
-
 img {
   width: 100%;
   float: inline-end;
@@ -154,4 +152,9 @@ button:focus{
   color: var(--lightbackground);
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 16px;
 }
