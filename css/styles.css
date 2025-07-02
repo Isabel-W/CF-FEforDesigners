@@ -27,6 +27,10 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 body{
     background-color: var(--background);
     font-family: Helvetica, Verdana, sans-serif;
@@ -38,37 +42,37 @@ body{
 }
 
 h1{
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--primary);
 }
 
 h2{
-    font-size: 1.75em;
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--primary);
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
-header{
-    font-size: 1.25em;
+/* header{
+    font-size: 1.25rem;
     background-color: var(--accent);
-    padding: 1.5em;
-}
+    padding: 1.5rem;
+} */
 
 main{
-    padding: 1.5em;
+    padding: 1.5rem;
     margin: 8px auto;
 }
 
 footer{
     color: var(--text);
     background-color: var(--accent);
-    padding: 1.5em;
+    padding: 1.5rem;
 }
 
 img {
@@ -164,6 +168,41 @@ button:focus{
 }
 
 #work .row { 
-  padding-bottom: 25px; 
+  padding-bottom: 24px; 
   border-bottom: 1px solid #4a4a4a; 
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 240px;
+}
+
+header {
+  background-color:var(--accent);
+  text-align: center;
+  padding: 8px 0;
+}
+
+#navigation {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 0 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }
