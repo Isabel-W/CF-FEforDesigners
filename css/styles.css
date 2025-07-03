@@ -206,3 +206,10 @@ nav ul li a {
   font-weight: 700;
   color: #4a4a4a;
 }
+
+#hero {
+  background-color: (var(--background));
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
