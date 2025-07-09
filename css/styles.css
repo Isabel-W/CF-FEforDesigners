@@ -29,6 +29,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,24 +39,27 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-weight: 300;
-  align-content: center;
+  align-items: center;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
+  line-height: 1.2;
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary);
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 /* header{
@@ -189,8 +193,14 @@ button:focus {
 
 header {
   background-color: var(--accent);
-  text-align: center;
+  text-align: unset;
   padding: 8px 0;
+  position: relative;
+}
+
+div {
+  margin: 0 auto;
+  width: 100%;
 }
 
 #navigation {
@@ -217,7 +227,7 @@ nav ul li a {
 #hero {
   background-color: (var(--background));
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
@@ -226,7 +236,29 @@ nav ul li a {
 
 @media screen and (min-width: 300px) {}
 
-@media screen and (min-width: 640px) {}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    background-color: var(--accent);
+    text-align: start;
+    padding: 20px 0 100px;
+    flex-direction: column;
+  }
+
+  nav {
+    width: auto;
+    float: right; /* ToDo: resolve: removes header/ nav width ? */
+    margin-top: 4px;
+  }
+
+  div {
+    max-width: 750px;
+    display: grid;
+
+  }
+}
 
 @media screen and (min-width: 768px) {}
 
