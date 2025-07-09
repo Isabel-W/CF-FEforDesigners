@@ -14,7 +14,7 @@
   :root {
     --primary: #ABD5D5;
     --accent: #176078;
-    --headline: ##ffffff;
+    --headline: #ffffff;
     --text: #C7C7C7;
     --background: #262626;
     --lightbackground: #141414;
@@ -76,7 +76,7 @@ main {
 footer {
   color: var(--text);
   background-color: var(--accent);
-  padding: 1.5rem;
+  padding: 16px;
 }
 
 img {
@@ -177,6 +177,12 @@ button:focus {
   /* 24px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 24px;
   border-bottom: 1px solid #4a4a4a;
@@ -231,6 +237,7 @@ nav ul li a {
   width: 100%;
 }
 
+
 /* @media media-type and (media-feature: media-value) */
 @media media-type and (media-feature: media-value) {}
 
@@ -247,6 +254,10 @@ Medium devices (640px and larger)
     flex-direction: column;
   }
 
+  footer {
+    padding: auto;
+  }
+
   nav {
     width: auto;
     float: right; /* ToDo: resolve: removes header/ nav width ? */
@@ -254,10 +265,14 @@ Medium devices (640px and larger)
   }
 
   div {
-    max-width: 750px;
+    max-width: 950px;
     display: grid;
-
   }
+
+  .col-md-6 { /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
+  width: 50%;
+  float: left;
+}
 }
 
 @media screen and (min-width: 768px) {}
