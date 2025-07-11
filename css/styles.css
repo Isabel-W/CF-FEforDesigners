@@ -127,7 +127,7 @@ a:focus {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
- /* background-color: #ff7f50; 
+  /* background-color: #ff7f50; 
   color: #ffffff;*/
   /* needed to override the default link color */
   font-weight: 400;
@@ -136,9 +136,10 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
-  transition: 0.2s; /* transition: 0.2s opacity; */
+  transition: 0.2s;
+  /* transition: 0.2s opacity; */
   transition-property: opacity;
-    animation: 4s change-button-color infinite alternate linear;
+  animation: 4s change-button-color infinite alternate linear;
 
 }
 
@@ -174,7 +175,7 @@ button:focus {
 /* Layout styling */
 .container {
   padding: 0 16px;
-  max-width: 1200px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -200,12 +201,20 @@ button:focus {
   /* Centers text */
 }
 
-#about-picture{
+#about-picture,
+#building {
   max-width: 50%;
 }
 
+
 .logo {
   max-width: 240px;
+}
+
+.col-md-2 {
+  /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
+  width: 50%;
+  float: left;
 }
 
 header {
@@ -272,30 +281,62 @@ Medium devices (640px and larger)
 
   nav {
     width: auto;
-    float: right; /* ToDo: resolve: removes header/ nav width ? */
+    float: right;
+    /* ToDo: resolve: removes header/ nav width ? */
     margin-top: 4px;
   }
 
-  .col-md-6 { /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
-  width: 50%;
-  float: left;
+  .col-md-2 {
+    /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
+    width: 50%;
+    float: left;
+  }
 }
+
+/*  @media screen and (min-width: 768px) {} */
+
+@media screen and (min-width: 1024px) {
+  header {
+    text-align: start;
+    padding: 24px 0 120px;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: auto;
+  }
+
+  .col-md-2 {
+    /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
+    width: 100%;
+    float: left;
+  }
+
+  #building {
+    max-width: 100%;
+  }
 }
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1024px) {}
-
-@media screen and (min-width: 1440px) {}
+/* @media screen and (min-width: 1440px) {}
 
 @media only screen and (min-resolution: 300dpi) {}
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {}
+@media only screen and (min-width: 768px) and (orientation: portrait) {} */
 
-/* ANIMATION */
+
+
+/* ==============================
+----------- ANIMATION ----------- 
+================================= */
+
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -317,8 +358,13 @@ Medium devices (640px and larger)
 } */
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -334,8 +380,13 @@ Medium devices (640px and larger)
 } */
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
@@ -343,8 +394,44 @@ Medium devices (640px and larger)
 }
 
 @keyframes change-button-color {
-  from {background-color: var(--accent);}
-  to {background-color: var(--primary);}
-  from {color: var(--primary);}
-  to {color: var(--accent);}
+  from {
+    background-color: var(--accent);
+  }
+
+  to {
+    background-color: var(--primary);
+  }
+
+  from {
+    color: var(--primary);
+  }
+
+  to {
+    color: var(--accent);
+  }
+}
+
+@keyframes move-sun {
+  from {
+    transform: translate(-32px, 80px);
+  }
+
+  to {
+    transform: translate(20px, 30px);
+  }
+}
+
+@keyframes scale-sun {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+.illu-sun {
+  animation: 10s move-sun infinite alternate linear;
+  animation: 15s scale-sun infinite alternate linear;
 }
