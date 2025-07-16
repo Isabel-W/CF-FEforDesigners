@@ -213,7 +213,7 @@ button:focus {
 
 .col-md-2 {
   /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
@@ -288,7 +288,7 @@ Medium devices (640px and larger)
 
   .col-md-2 {
     /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
-    width: 50%;
+    width: 80%;
     float: left;
   }
 }
@@ -308,7 +308,7 @@ Medium devices (640px and larger)
 
   .col-md-2 {
     /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
-    width: 100%;
+    width: 50%;
     float: left;
   }
 
