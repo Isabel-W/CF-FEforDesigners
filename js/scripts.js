@@ -2,6 +2,15 @@
 
 console.log("Hi. nice to have you around!")
 
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
+
 
 /* ======= playground ======= */
 var me = { name: "Isabel", age: 29, location: "Munich" };
