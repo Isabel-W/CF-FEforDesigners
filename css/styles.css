@@ -143,6 +143,45 @@ a:focus {
 
 }
 
+.socials{
+  align-items: flex-start;
+  background-color: #052029;
+  display: block;
+}
+
+.projectfooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectfooter picture{
+  flex: 1;
+  max-width: 24px;
+}
+
+
+.projectfooter ul {
+  display: flex; /* Makes the list items appear horizontally */
+  flex-direction: row;
+  list-style-type: none; /* Removes the default bullet points */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline-start: 0;
+}
+
+.projectfooter ul li {
+  display: flex; /* Ensures the chevron and the text are aligned horizontally */
+  align-items: center; /* Vertically aligns the chevron and text */
+  margin: 0; /* Adds horizontal spacing between list items */
+}
+
+.projectfooter img{
+  margin: 0;
+  width: auto;
+}
+
 button:hover,
 button:active {
   background-color: #052029;
@@ -218,6 +257,7 @@ button:focus {
 
 a img {
   max-height: 48px;
+  margin: 8px 0 8px 8px;
 }
 
 .col-md-2 {
