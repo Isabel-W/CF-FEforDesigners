@@ -73,6 +73,17 @@ main {
   margin: 8px auto;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer {
   color: var(--text);
   background-color: var(--accent);
@@ -143,27 +154,29 @@ a:focus {
 
 }
 
-.socials{
+.socials {
   align-items: flex-start;
   display: block;
 }
 
-.projectfooter{
+.projectfooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.projectfooter picture{
+.projectfooter picture {
   flex: 1;
   max-width: 24px;
 }
 
 
 .projectfooter ul {
-  display: flex; /* Makes the list items appear horizontally */
+  display: flex;
+  /* Makes the list items appear horizontally */
   flex-direction: row;
-  list-style-type: none; /* Removes the default bullet points */
+  list-style-type: none;
+  /* Removes the default bullet points */
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -171,12 +184,15 @@ a:focus {
 }
 
 .projectfooter ul li {
-  display: flex; /* Ensures the chevron and the text are aligned horizontally */
-  align-items: center; /* Vertically aligns the chevron and text */
-  margin: 0; /* Adds horizontal spacing between list items */
+  display: flex;
+  /* Ensures the chevron and the text are aligned horizontally */
+  align-items: center;
+  /* Vertically aligns the chevron and text */
+  margin: 0;
+  /* Adds horizontal spacing between list items */
 }
 
-.projectfooter img{
+.projectfooter img {
   margin: 0;
   width: auto;
 }
@@ -270,7 +286,7 @@ header {
   text-align: unset;
   padding: 8px 0;
   position: relative;
-  justify-content:left;
+  justify-content: left;
 }
 
 div {
@@ -288,10 +304,6 @@ div {
 nav ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
 }
 
 nav ul li a {
@@ -321,7 +333,7 @@ Medium devices (640px and larger)
   header {
     background-color: var(--accent);
     text-align: start;
-    padding: 20px 0 100px;
+    padding: 20px 0 20px;
     flex-direction: column;
   }
 
@@ -334,6 +346,23 @@ Medium devices (640px and larger)
     float: right;
     /* ToDo: resolve: removes header/ nav width ? */
     margin-top: 4px;
+  }
+
+  .navtoggle {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
+  nav ul li {
+    display: inline-block;
   }
 
   .col-md-2 {
@@ -352,7 +381,7 @@ Medium devices (640px and larger)
 @media screen and (min-width: 1024px) {
   header {
     text-align: start;
-    padding: 24px 0 120px;
+    padding: 24px 0 24px;
     flex-direction: column;
   }
 
