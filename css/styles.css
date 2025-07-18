@@ -180,7 +180,8 @@ button:focus {
   margin-right: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .row {
@@ -298,8 +299,8 @@ Medium devices (640px and larger)
 
   .col-md-2 {
     /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
-    width: 80%;
-    float: left;
+    display: inline-block;
+    align-content: flex-start;
   }
 
   .logo {
@@ -322,8 +323,8 @@ Medium devices (640px and larger)
 
   .col-md-2 {
     /* col is what tells us this is for columns, the md stands for medium devices,  6 is for the 6-column span we want this column to occupy */
-    width: 50%;
-    float: left;
+    display: inline-block;
+    align-content: flex-start;
   }
 
   .logo {
