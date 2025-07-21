@@ -253,8 +253,13 @@ button:focus {
 }
 
 .row {
-  margin: 24px 0;
+  margin-top: 16px 0;
+  margin-bottom: 24px;
   /* 24px top and bottom, 0 left and right */
+}
+
+.space{
+  margin-bottom: 40px;
 }
 
 .row::after {
@@ -264,7 +269,7 @@ button:focus {
 }
 
 #work .row {
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #4a4a4a;
 }
 
@@ -282,11 +287,48 @@ button:focus {
 .logo {
   max-width: 150px;
   text-align: left;
+  align-items: flex-start;
 }
+
+input[type=email],input[type=text], select {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--darkgrey);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--lightbackground);
+  max-width: 900px;
+  resize: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  display: block;
+  transition: width 0.4s ease-in-out;
+}
+
+textarea, select {
+  width: 100%;
+  height: 150px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--darkgrey);
+  border-radius: 4px;
+  background-color: var(--lightbackground);
+  max-width: 900px;
+  resize: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  display: block;
+  transition: width 0.4s ease-in-out;
+}
+
+
 
 a img {
   max-height: 48px;
   margin: 8px 0 8px 8px;
+  align-items: flex-start;
 }
 
 .col-md-2 {
