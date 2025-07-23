@@ -37,7 +37,7 @@ body {
   font-family: Helvetica, Verdana, sans-serif;
   color: var(--text);
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
   align-items: center;
 }
@@ -408,6 +408,10 @@ Medium devices (640px and larger)
     flex-direction: column;
   }
 
+  body {
+    font-size: 1.7rem;
+  }
+
   footer {
     padding: auto;
   }
@@ -461,6 +465,10 @@ Medium devices (640px and larger)
 
   footer {
     padding: auto;
+  }
+
+  body {
+    font-size: 1.8rem;
   }
 
   .col-md-2 {
