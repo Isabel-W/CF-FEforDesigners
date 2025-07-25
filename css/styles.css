@@ -1,6 +1,6 @@
 :root {
   --primary: #176078;
-  --accent: #ABD5D5;
+  --accent: #BBDDDE;
   --headline: #141414;
   --text: #262626;
   --background: #F9FAFF;
@@ -12,7 +12,7 @@
 /* define colors for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #ABD5D5;
+    --primary: #BBDDDE;
     --accent: #176078;
     --headline: #ffffff;
     --text: #C7C7C7;
