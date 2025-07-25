@@ -408,6 +408,11 @@ nav ul li a {
   justify-self: start;
 }
 
+.projectLogos {
+  max-width: 300px;
+  justify-content: center;
+}
+
 
 /* @media media-type and (media-feature: media-value) */
 @media media-type and (media-feature: media-value) {}
