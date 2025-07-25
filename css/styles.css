@@ -290,6 +290,10 @@ button:focus {
   display: block;
 }
 
+.work {
+
+}
+
 #hero h1 {
   text-align: center;
   /* Centers text */
@@ -393,6 +397,30 @@ nav ul li a {
   width: 100%;
 }
 
+.hero-tagline {
+  text-transform: uppercase;
+  color: #00bcd4;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-description {
+  
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
 .projectButton {
   border: 2px solid var(--primary);
   color: var(--primary);
@@ -457,7 +485,6 @@ Medium devices (640px and larger)
     justify-content: space-between;
     width: 100%;
   }
-
 
 
   .navtoggle li:not(:first-child) {
