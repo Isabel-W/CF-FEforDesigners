@@ -284,7 +284,7 @@ button:focus {
   display: table;
 }
 
-#work .row {
+.work .row {
   padding-bottom: 16px;
   border-bottom: 1px solid #4a4a4a;
   display: block;
