@@ -1,4 +1,4 @@
-// alert("Hello, noce to have you here!");
+/* alert("Hello, nice to have you here!"); */
 
 console.log("Hi. nice to have you around!")
 
@@ -36,7 +36,7 @@ function times(number1, number2) {
 var result = add(100, times(2, 10));
 
 function check(value) {
-  if (value < 200) {
+  if (value<200) {
     value = "not calculated";
   } else {
     value == value;
@@ -49,7 +49,7 @@ console.log("Calculated result is: " + check(result) + ".");
 
 function loop(number) {
   if (number > 0) {
-    for (var i = 1; i <= 3; i++) {
+    for (var i=1; i<=3; i++) {
       sum = number + i;
       console.log(i);
     }
